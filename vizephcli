@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Cài đặt các thư viện cần thiết
+echo "Updating and installing dependencies..."
+sudo apt update && sudo apt install -y build-essential automake git
+
+# Clone cpuminer-opt repository nếu chưa tồn tại
+if [ ! -d "cpuminer-opt" ]; then
+  echo "Cloning cpuminer-opt repository..."
+  git clone https://github.com/JayDDee/cpuminer-opt.git
+fi
+
+# Chuyển vào thư mục cpuminer-opt
+cd cpuminer-opt
+
+# Biên dịch cpuminer-opt
+if [ ! -f "./cpuminer" ]; then
+  echo "Building cpuminer-opt..."
+  ./build.sh
+fi
+
+# Đặt thông tin đào
+WALLET_ADDRESS="zeph-eu.kryptex.network:7030"  # Địa chỉ ví ZEPH của bạn
+POOL_URL="stratum+tcp://your_mining_pool_here:port"  # Địa chỉ pool đào
+NUM_THREADS=1  # Số luồng CPU sử dụng (tối ưu cho Cloud Shell)
+
+# Chạy miner
+echo "Starting mining for ZEPH..."
+./cpuminer -a rx/0 -o
