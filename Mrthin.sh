@@ -8,7 +8,7 @@ declare -A region_image_map=(
 )
 
 # URL containing User Data on GitHub
-user_data_url="https://raw.githubusercontent.com/thines8899/ZEPH/refs/heads/main/viZEPH"
+user_data_url="https://raw.githubusercontent.com/thines8899/ZEPH/refs/heads/main/vizephcli"
 
 # Path to User Data file
 user_data_file="/tmp/user_data.sh"
