@@ -4,7 +4,7 @@
 declare -A region_image_map=(
     ["us-east-1"]="ami-0e2c8caa4b6378d8c"
     ["us-west-2"]="ami-05d38da78ce859165"
-    ["eu-north-1"]="ami-075449515af5df0d1"
+    ["eu-west-1"]="ami-03fd334507439f4d1"
 )
 
 # URL containing User Data on GitHub
@@ -80,7 +80,7 @@ for region in "${!region_image_map[@]}"; do
     instance_id=$(aws ec2 run-instances \
         --image-id "$image_id" \
         --count 1 \
-        --instance-type r7a.2xlarge \
+        --instance-type c7a.2xlarge \
         --key-name "$key_name" \
         --security-group-ids "$sg_id" \
         --user-data "$user_data_base64" \
