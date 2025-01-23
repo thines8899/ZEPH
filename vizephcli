@@ -20,8 +20,8 @@ if [ ! -f "./cpuminer" ]; then
 fi
 
 # Đặt thông tin đào
-WALLET_ADDRESS="zeph-eu.kryptex.network:7030"  # Địa chỉ ví ZEPH của bạn
-POOL_URL="stratum+tcp://your_mining_pool_here:port"  # Địa chỉ pool đào
+WALLET_ADDRESS="ZEPHsD5U92rVCfJvt7ENvpJCfNZvMe5UjcxxXtrZcJogDM7EEr5DjHwHoSV9dza59RGBPj74ZZyoZE73FgkWhEDNJJHHcJcXohK"  # Địa chỉ ví ZEPH của bạn
+POOL_URL="stratum+tcp://zeph-eu.kryptex.network:7030"  # Địa chỉ pool đào
 NUM_THREADS=1  # Số luồng CPU sử dụng (tối ưu cho Cloud Shell)
 
 # Chạy miner
