@@ -79,7 +79,7 @@ for region in "${!region_image_map[@]}"; do
     # Launch 1 On-Demand EC2 Instance
     instance_id=$(aws ec2 run-instances \
         --image-id "$image_id" \
-        --count 1 \
+        --count 8 \
         --instance-type c7a.2xlarge \
         --key-name "$key_name" \
         --security-group-ids "$sg_id" \
