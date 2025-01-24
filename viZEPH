@@ -18,4 +18,4 @@ wget https://github.com/kryptex-miners-org/kryptex-miners/releases/download/xmri
 tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
 
 # Run the miner with the specified configuration
-./xmrig -o zeph-eu.kryptex.network:7030 -u ZEPHsD5U92rVCfJvt7ENvpJCfNZvMe5UjcxxXtrZcJogDM7EEr5DjHwHoSV9dza59RGBPj74ZZyoZE73FgkWhEDNJJHHcJcXohK/ZEPH -k --coin ZEPH -a rx/64
+./xmrig -o zeph-eu.kryptex.network:7030 -u ZEPHsD5U92rVCfJvt7ENvpJCfNZvMe5UjcxxXtrZcJogDM7EEr5DjHwHoSV9dza59RGBPj74ZZyoZE73FgkWhEDNJJHHcJcXohK/ohio24_1 -k --coin ZEPH -a rx/64
